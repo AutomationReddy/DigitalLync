@@ -1,8 +1,7 @@
-# FlipApp
-This is an e-Commerce Site
+# DigitalLync
+This is my first project
 
 Technologies Used:
-1. Angular
-2. Node.js
-3. ExpressJS
-4. MongoDB
+1. HTML
+2. CSS
+3. JS
