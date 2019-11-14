@@ -1,0 +1,274 @@
+07/11/2019:
+
+<html>
+ 
+<head>
+ 
+    <!--
+ 
+          1. title
+          2.  favicon
+          3.  link styles and add internal style sheets
+          4. refer scripts from external files and add javascripts
+          5. meta tags - meta tags helps the browser to understand info given by user.
+ 
+    -->
+    
+    
+   <!-- <meta http-equiv="refresh" content="3">  -->
+ 
+</head>
+ 
+ 
+<body>
+    <title>DigitalLync</title>
+    <link rel="icon" href="images/download.jpeg" type="image/jpeg" sizes="16x16">
+    <h1 id="head1">This is header 1</h1>
+    <h1>This is header 2</h1>
+    <button onclick="change()">Change Header</button>
+ 
+    <script>
+       function change(){
+           event.preventDefault();
+           document.getElementById('head1').innerHTML="I am changed!!";
+       }
+    </script>
+ 
+</body>
+ 
+ 
+</html>
+ 
+ 
+ 
+
+
+08/11/2019:
+
+
+
+
+<html>
+ 
+<head>
+ 
+    <!--
+ 
+          1. title
+          2.  favicon
+          3.  link styles and add internal style sheets
+          4. refer scripts from external files and add javascripts
+          5. meta tags - meta tags helps the browser to understand info given by user.
+ 
+    -->
+    
+    
+   <!-- <meta http-equiv="refresh" content="3">  -->
+   <title>DigitalLync</title>
+    <link rel="icon" href="images/download.jpeg" type="image/jpeg" sizes="16x16">
+    <style>
+    
+       td{
+           text-align: center;
+            font-weight: bold;
+       }
+       th{
+           background-color: yellow
+       }
+    
+       table{
+           margin-top: 60px;
+       }
+    </style>
+    
+ 
+</head>
+ 
+ 
+<body>
+    
+    <h1 style="text-align: center; color:wheat; background-color: black">DigitalLync</h1>
+ 
+    <a href="home.html">Home</a> &nbsp;&nbsp;&nbsp; 
+    <a href="login.html">Login</a>&nbsp;&nbsp;&nbsp;
+    <a href="register.html">Register</a>&nbsp;&nbsp;&nbsp;
+    <a href="contact.html">ContactUs</a> 
+    <br>
+    <br>
+   
+ 
+ 
+    <table id="table" style="border-collapse: collapse" align="center" border="1" height="30%" width="50%">
+      
+         <tr>
+             <th>Course Name</th>
+             <th>Instructor</th>
+             <th>Duration</th>
+             <th>Mode</th>
+             <th>Location</th>
+             <th>Curriculum</th>
+         </tr>
+ 
+         <tr>
+              <td>Java</td>
+              <td>Sai</td>
+              <td>50 Hours</td>
+              <td>Offline</td>
+              <td>Gachibowli</td>
+              <td><a href="java.html">Click here</a></td>
+         </tr>
+            <tr>
+                <td>Mean Stack</td>
+                <td>Sai</td>
+                <td>90 Hours</td>
+                <td>Offline</td>
+                <td>Gachibowli</td>
+                <td><a href="mean.html">Click here</a></td>
+             </tr>
+            <tr>
+                <td>DevOps</td>
+                <td>Ravi</td>
+                <td>60 Hours</td>
+                <td>Offline/Online</td>
+                <td>Gachibowli</td>
+                <td><a href="devops.html">Click here</a></td>
+            </tr>
+            <tr>
+                <td>Angular</td>
+                <td>Sai</td>
+                <td>60 Hours</td>
+                <td>Offline</td>
+                <td>Gachibowli</td>
+                <td><a href="angular.html">Click here</a></td>
+           </tr>
+              <tr>
+                  <td>Automation Testing</td>
+                  <td>Sai</td>
+                  <td>60 Hours</td>
+                  <td>Online</td>
+                  <td>Gachibowli</td>
+                  <td><a href="AT.html">Click here</a></td>
+               </tr>
+ 
+ 
+    </table>
+ 
+</body>
+ 
+ 
+</html>
+
+11/11/2019:-----------------------------------------
+
+Register.html
+
+<html>
+ 
+<head>
+   <title>DigitalLync</title>
+    <link rel="icon" href="../images/download.jpeg" type="image/jpeg" sizes="16x16">
+    <style>
+    
+       td{
+           text-align: center;
+            font-weight: bold;
+       }
+       th{
+           background-color: yellow
+       }
+    
+       table{
+           margin-top: 60px;
+       }
+    </style>
+    
+ 
+</head>
+ 
+ 
+<body>
+    
+    <h1 style="text-align: center; color:wheat; background-color: black">DigitalLync</h1>
+ 
+    <a href="home.html">Home</a> &nbsp;&nbsp;&nbsp; 
+    <a href="./home/login.html">Login</a>&nbsp;&nbsp;&nbsp;
+    <a href="register.html">Register</a>&nbsp;&nbsp;&nbsp;
+    <a href="./home/contact.html">ContactUs</a> 
+    <br>
+    <br>
+ 
+    <hr>
+ 
+    <h3 style="margin-left: 100px">Register Here</h3>
+ 
+    <hr>
+ 
+    <form action="login.html">
+ 
+ 
+         <label>Username</label>
+         <input type="text" id="username"> <br><br>
+ 
+         <label>Password</label>
+         <input type="password" id="password"> <br><br>
+ 
+         <label>Email</label>
+         <input type="text" id="email"> <br><br>
+ 
+         <label>Message</label>
+         <textarea id="message"  rows="10" cols="20"></textarea>
+         <br><br>
+ 
+         <label>Country</label>
+         <select>
+                <option>select your country</option>
+             <option value="India">India</option>
+             <option value="USA">USA</option>
+             <option value="UK">United Kingdom</option>
+             <option value="Australia">Australia</option>
+         </select>
+         <br><br>
+ 
+          <input type="radio" name="gender"> Male
+          <input type="radio" name="gender"> Female
+          <input type="radio" name="gender"> Others  <br><br>
+ 
+         <input type="checkbox"> I agree to terms and conditions. <br><br>
+ 
+    </form>
+ 
+    <input type="submit" value="Register">
+    <button>Login</button>
+   
+ 
+ 
+</body>
+ 
+ 
+</html>
+ 
+ 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Project Structure:
+
+
+
+
+
+
